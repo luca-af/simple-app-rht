@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+export GIN_MODE=release
+export FLAG_MSG=true
+export MSG_CUSTOM="Messaggio dalla build s2i"
+
+
+exec /opt/app-root/gobinary --cat false
